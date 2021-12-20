@@ -1,0 +1,35 @@
+###
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{   
+    "name":"rahul",
+    "username":"rahul123",
+    "password": "rahul@456",
+    "gender": "Male",
+    "location":"hyderabad"
+}
+
+
+###
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username":"rahul123",
+    "password": "rahul@456"
+}
+
+###
+GET http://localhost:3000/states/
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNjQwMDI3MjE4fQ.emlF54DInm4Fsa8iiM-wWKS99lN352Z2zdWdWrvobQc
+
+
+###
+GET http://localhost:3000/states/1/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNjQwMDI2OTAzfQ.A5jsAHtLdeAYxsV4W46BFVvHLDNovnkjtSO4NRR7zS0
+
+###
+GET http://localhost:3000/states/3/stats
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNjQwMDI0NDk1fQ.aM6aSGsQmnpLnHsjS_KOIfMyz0sgdoRpqnMzDPQwcXQ
+
